@@ -28,7 +28,7 @@ body {
   padding: 0;
 }
 
-/* === КОНТЕЙНЕР === */
+
 .page__container,
 .container {
   max-width: 1100px;
@@ -36,7 +36,6 @@ body {
   padding: 40px 20px;
 }
 
-/* === ХЛЕБНЫЕ КРОШКИ === */
 .breadcrumbs {
   font-size: 14px;
   color: var(--color-text-light);
@@ -72,7 +71,6 @@ a.breadcrumbs__item:hover {
   color: var(--color-text-light);
 }
 
-/* === КАРТОЧКА ТОВАРА === */
 .product-card {
   background: var(--color-bg);
   border-radius: var(--radius);
@@ -83,7 +81,6 @@ a.breadcrumbs__item:hover {
   padding: 40px;
 }
 
-/* Изображение */
 .product-card__image-wrapper {
   display: flex;
   align-items: center;
@@ -105,7 +102,6 @@ a.breadcrumbs__item:hover {
   transform: scale(1.03);
 }
 
-/* Информация о товаре */
 .product-card__info {
   display: flex;
   flex-direction: column;
@@ -132,7 +128,6 @@ a.breadcrumbs__item:hover {
   color: var(--color-text);
 }
 
-/* === ФАСОВКА === */
 .product-card__label {
   font-size: 13px;
   font-weight: 700;
@@ -181,7 +176,6 @@ a.breadcrumbs__item:hover {
   color: white;
 }
 
-/* === ЦЕНА И АРТИКУЛ === */
 .product-card__price-block {
   display: flex;
   align-items: flex-end;
@@ -223,7 +217,6 @@ a.breadcrumbs__item:hover {
   text-align: right;
 }
 
-/* Анимация смены значений */
 @keyframes valueChange {
   0% {
     opacity: 1;
@@ -247,7 +240,6 @@ a.breadcrumbs__item:hover {
   animation: valueChange 0.4s ease-in-out;
 }
 
-/* Кнопка "В корзину" */
 .product-card__btn {
   width: 100%;
   padding: 18px;
@@ -273,7 +265,6 @@ a.breadcrumbs__item:hover {
   transform: translateY(0);
 }
 
-/* === АДАПТИВНОСТЬ === */
 
 @media (max-width: 1200px) {
   .packaging-options {
@@ -281,7 +272,6 @@ a.breadcrumbs__item:hover {
   }
 }
 
-/* Tablet: 900px */
 @media (max-width: 900px) {
   .page__container,
   .container {
@@ -346,7 +336,6 @@ a.breadcrumbs__item:hover {
   }
 }
 
-/* Mobile: 375px */
 @media (max-width: 375px) {
   .page__container,
   .container {
