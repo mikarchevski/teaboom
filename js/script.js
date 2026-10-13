@@ -17,40 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Функция для запуска анимации
   const animateElement = (element, newValue) => {
-    // Удаляем класс, если он уже есть (чтобы перезапустить анимацию)
     element.classList.remove('animate-change');
-
-    // Форсируем reflow для перезапуска анимации
     void element.offsetWidth;
-
-    // Добавляем класс анимации
     element.classList.add('animate-change');
-
-    // Меняем значение в середине анимации (когда элемент невидим)
     setTimeout(() => {
       element.textContent = newValue;
-    }, 160); // 40% от 400мс = 160мс
+    }, 160);
   };
 
   // Обработка клика по фасовке
   packagingOptions.forEach((option) => {
     option.addEventListener('click', () => {
-      // Снимаем активный класс и aria-pressed со всех кнопок
       packagingOptions.forEach((opt) => {
         opt.classList.remove('packaging-option--active');
         opt.setAttribute('aria-pressed', 'false');
       });
 
-      // Добавляем активный класс и aria-pressed нажатой кнопке
       option.classList.add('packaging-option--active');
       option.setAttribute('aria-pressed', 'true');
 
-      // Получаем данные из data-атрибутов
       const price = option.dataset.price;
       const oldPrice = option.dataset.oldPrice;
       const sku = option.dataset.sku;
 
-      // Запускаем анимацию для всех элементов
       animateElement(currentPriceEl, formatPrice(price));
       animateElement(oldPriceEl, formatPrice(oldPrice));
       animateElement(skuEl, sku);
