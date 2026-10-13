@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ананасовый улун - китайский светлый ароматизированный чай. Купить в Москве с доставкой."
+    />
+    <title>Ананасовый улун | Teaboom</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ананасовый улун | Teaboom" />
+    <meta
+      property="og:description"
+      content="Светлый Фуцзяньский улун с ароматом ананаса"
+    />
+    <meta property="og:image" content="ulun.jpg" />
+    <meta property="og:type" content="product" />
+  </head>
+  <body>
+    <main class="page__container">
+      <!-- Хлебные крошки -->
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="#" class="breadcrumbs__item">Каталог</a>
+        <a href="#" class="breadcrumbs__item">Улун</a>
+        <a href="#" class="breadcrumbs__item">Ароматизированный улун</a>
+        <span
+          class="breadcrumbs__item breadcrumbs__item--active"
+          aria-current="page"
+        >
+          Ананасовый улун
+        </span>
+      </nav>
+
+      <article class="product-card">
+        <div class="product-card__image-wrapper">
+          <!-- Если есть разные размеры файлов -->
+          <img
+            src="ulun-800.jpg"
+            srcset="
+              ulun-400.jpg   400w,
+              ulun-800.jpg   800w,
+              ulun-1200.jpg 1200w,
+              ulun-1600.jpg 1600w
+            "
+            sizes="(max-width: 375px) 400px,
+                   (max-width: 768px) 800px,
+                   (max-width: 1440px) 1200px,
+                   1600px"
+            alt="Ананасовый улун"
+            class="product-card__image"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="product-card__info">
+          <h1 class="product-card__title">Ананасовый улун</h1>
+          <p class="product-card__category">
+            Китайский светлый ароматизированный улун
+          </p>
+
+          <p class="product-card__description">
+            Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый
+            крупный лист изумрудного цвета, скруткой напоминающий Те Гуань Инь.
+            В прогретой посуде раскрывается аромат свежей весенней зелени и
+            спелого ананаса.
+          </p>
+
+          <div class="product-card__packaging">
+            <span class="product-card__label" id="packaging-label"
+              >Выберите фасовку:</span
+            >
+            <div
+              class="packaging-options"
+              id="packagingOptions"
+              role="radiogroup"
+              aria-labelledby="packaging-label"
+            >
+              <button
+                class="packaging-option packaging-option--active"
+                aria-pressed="true"
+                data-sku="01306"
+                data-price="326.40"
+                data-old-price="349.20"
+              >
+                100 г
+              </button>
+              <button
+                class="packaging-option"
+                aria-pressed="false"
+                data-sku="01307"
+                data-price="1432.00"
+                data-old-price="1646.00"
+              >
+                500 г
+              </button>
+              <button
+                class="packaging-option"
+                aria-pressed="false"
+                data-sku="01308"
+                data-price="2064.00"
+                data-old-price="2592.00"
+              >
+                1000 г
+              </button>
+              <button
+                class="packaging-option"
+                aria-pressed="false"
+                data-sku="01309"
+                data-price="6320.00"
+                data-old-price="8710.00"
+              >
+                5000 г
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card__price-block">
+            <div class="price">
+              <span class="price__current" id="currentPrice">326,40 ₽</span>
+              <span class="price__old" id="oldPrice">349,20 ₽</span>
+            </div>
+            <div class="product-card__sku">
+              арт. <span id="sku">01306</span>
+            </div>
+          </div>
+
+          <button class="product-card__btn" id="addToCartBtn" type="button">
+            В корзину
+          </button>
+        </div>
+      </article>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
